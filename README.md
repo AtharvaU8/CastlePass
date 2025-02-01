@@ -9,6 +9,8 @@
 
 CastlePass is a unique and innovative password generator chrome extension that turns your chess moves into secure passwords. Play against the bot, and generate strong, hashed passwords!
 
+## Installation
+
 ## Usage
 
 ![how-to-use-gif]()
@@ -23,8 +25,8 @@ CastlePass is a unique and innovative password generator chrome extension that t
 
 ### Security
 
-- Hashing Algorithm – Uses strong cryptographic hashing to generate secure passwords.
-- Randomized Encryption – Ensures your passwords are tough to guess.
+- SHA-256 Hashing – Every password is generated using the SHA-256 hashing algorithm, ensuring high security and randomness.
+- Strong Passwords – The algorithm generates passwords with a mix of uppercase, lowercase, numbers, and symbols for extra protection.
 
 ### Privacy
 
@@ -33,15 +35,14 @@ CastlePass is a unique and innovative password generator chrome extension that t
 
 ### Future Updates 
 
-- Custom Password Saving (Secure & Private) – A safer way to save passwords without compromising security.
+- Custom Password Feature (Secure & Private) – Store and retrieve your custom passwords securely using encrypted chess moves.
 - Password Manager - A secure and unique password manager.
-- Multiple Chess Engines – More bot difficulty levels for better gameplay.
+- Multiple Chess Engines – More bot difficulty levels and better gameplay to generate even more randomized passwords..
 - User Move Validation – Ensure your moves follow strong security rules.
+- Enhanced Security – Implementing even stronger encryption methods beyond hashing for added protection.
+- Multi-Platform Support – Expanding to mobile and other platforms for wider accessibility.
 
-### Vision
-
-- We aim to revolutionize password security by making it interactive, engaging, and foolproof.
-- Chess isn't just a game—it’s your way to better security!
+We aim to revolutionize password security by making it interactive and more engaging. Stay tuned for future updates! Your password security is about to get a whole lot smarter!
 
 <br>
 
@@ -49,7 +50,7 @@ CastlePass is a unique and innovative password generator chrome extension that t
 
 For Now we're compatible with only chromium browser.
 
-- **Chromium Browser**
+- **Chrome Browser**
 
 <br>
 

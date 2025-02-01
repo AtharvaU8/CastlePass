@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CastlePass ~ Chess Password Generator</title>
+          
+  <!-- Chess JS (slightly modified) -->
+  <script defer src="../script/chess/chess.js"></script>
+          
+  <!-- jQuery --> 
+  <script src="../script/jquery-3.5.1.js"></script>
+          
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+        
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css"/>
+  
+  <!-- Chessboard css --> 
+  <link rel="stylesheet" href="../style/chessboard-1.0.0.min.css">
+  
+</head>
+<body>
+ <main>
+   <!-- MAIN DIV --> 
+    <div class="chess">
+      
+      <!-- Upward buttons --> 
+      <div class="up">
+        
+        <!-- Heading Name --> 
+        <h3 class="play">CastlePass</h3>
+        
+        <!-- upward buttons--> 
+        <div class="up-btn">
+          
+          <button class="settings"><a class="set"><i id="settingicon" class="fa-solid fa-gear"></i></a></button>
+          <span class="popuptext" id="setpopup">Settings</span>
+          
+           <!-- copy button -->                 
+          <button class="copyMoves" id="copyMovesButton">
+            <i id="copyicon" class="fa-regular fa-clipboard"></i>
+            <i id="copiedicon" class="fas fa-check"></i>
+          </button>
+          <span class="popuptext" id="copypopup">Copy Chess Moves!</span>
+          
+          <!-- close button --> 
+          <button class="close" id="close"><i id="closeicon" class="fas fa-times"></i></button>
+                            
+        </div>
+      </div>
+      
+      <!-- chessboard --> 
+      <div class="board-cont">
+        <div id="myBoard"></div>
+      </div>  
+      
+      <!-- *ignore --> 
+      <div class="post" style="display: none;">
+        <div class="row justify-content-center">
+          <span id="position-count">0</span> &nbsp positions evaluated in &nbsp <span id="time">0</span>s.
+        </div>
+        <div class="row mb-3 justify-content-center">
+          That's &nbsp <span id="positions-per-s">0</span> &nbsp positions / s.
+        </div>
+        
+        <div class="select">
+          <div class="form-group">
+            <label for="search-depth">Search Depth (Black):</label>
+            <select id="search-depth">
+              <option value="3" selected>3</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="search-depth-white">Search Depth (White):</label>
+            <select id="search-depth-white">
+              <option value="3" selected>3</option>
+            </select>
+          </div>
+                          
+        </div>
+                        
+      </div>
+      
+      <!-- downward buttons --> 
+      <div class="inc">
+        
+        <div class="suggest-crypt">
+            
+            <div class="act-sugg">
+                        
+              <div class="action">
+                <button class="action-btn" id="undoBtn"><i id="undoIcon" class="fa fa-undo"></i>Undo</button>
+                <button class="action-btn" id="redoBtn"><i id="redoIcon" class="fa fa-redo"></i>Redo</button>
+              </div>
+              
+              <div class="suggest">
+                <input type="checkbox" id="showHint" name="showHint" value="showHint">
+                <label for="showHint">Suggested Moves</label>
+              </div>
+              
+            </div>
+          
+        
+          <div class="div-crypt">
+            <!-- generate button--> 
+            <button class="generate" id="generate"><i id="lock" class="fa fa-lock"></i>Generate
+            </button>
+          </div>
+        </div>
+        
+        <!-- display hashed password --> 
+        <div class="pass">
+          <div class="copy-text">
+            <input type="text" class="password" value="Generated Password" readonly>
+            <i id="showInput" class="fa-regular fa-eye-slash show"></i>
+            <button class="copyPassword"> 
+              <i id="copypassicon" class="fa fa-clone"></i>
+              <i id="copiedpassicon" class="fas fa-check"></i>
+            </button>
+          </div>
 
+        </div>
+        
+      </div>
+                    
+    </div>
+                  
+  </main>
+        
+        
+    <!-- Chessboard JS -->
+  <script defer src="../script/chess/chessboard-1.0.0.js"></script>
+ 
+  <!-- Custom JS -->
+  <script defer src="script.js"></script>
+  <script defer src="../script/chess/chess-bot.js"></script>
+        
+</body>
+</html>

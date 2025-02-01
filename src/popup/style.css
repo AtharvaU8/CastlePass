@@ -1,0 +1,403 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+  /*background: rgba(20, 20, 20, 1);*/
+  color: #D7D7D7;
+  background: #2a2a2a;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+/* main div */
+.chess{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 320px;
+  height: 470px;
+  color: #D7D7D7;
+  background: #2a2a2a;
+   border-radius: 15px;
+   text-align: center;
+   transition: all 0.3s ease;
+   overflow: auto;
+ }
+ 
+ 
+ /* upward section */
+ .up{
+   display: flex;
+   width: 300px;
+   align-items: center;
+   margin-bottom: 7px;
+   justify-content: space-between;
+ }
+ .up-btn{
+   display: flex;
+   flex-direction: row;
+ }
+ 
+ .play{
+  font-size: 1.5em;
+ }
+
+ /* upward buttons */
+ .close{
+   background: orangered;
+   width: 27px;
+   height: 27px;
+   border: 1px solid transparent;
+   border-radius: 3px;
+   box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+   cursor: pointer;
+   font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+   font-weight: 500;
+   outline: none;
+   text-decoration: none;
+   user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   -webkit-user-select: none;
+ }
+ #closeicon{
+   font-size: 17px;
+ }
+ .copyMoves{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 27px;
+   width: 27px;
+   background-color: #98D5FF;
+   border: 1px solid transparent;
+   border-radius: 3px;
+   box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+   box-sizing: border-box;
+   color: black;
+   cursor: pointer;
+   font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+   font-size: 5px;
+   font-weight: 500;
+   line-height: 1.15385;
+   margin: 0 5px 0 5px;
+   outline: none;
+   padding: 8px .8em;
+   position: relative;
+   text-align: center;
+   text-decoration: none;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   vertical-align: baseline;
+   white-space: nowrap;
+ }
+ #copyicon{
+   font-size: 17px;
+ }
+ .copyMoves:disabled, .generate:disabled, #undoBtn:disabled, #redoBtn:disabled, .key:disabled{
+   background: gray;
+   color: black;
+ }
+ #copiedicon{
+  display: none;
+  font-size: 15px;
+ }
+ .set{
+   text-decoration: none;
+   color: white;
+ }
+ .settings{
+   background: #2B5185;
+   width: 27px;
+   height: 27px;
+   border: 1px solid transparent;
+   border-radius: 3px;
+   box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+   cursor: pointer;
+   font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+   font-weight: 500;
+   margin: 0;
+   outline: none;
+   text-decoration: none;
+ }
+ #settingicon{
+   font-size: 15px;
+   margin-top: 4px;
+ }
+ 
+ /* popup text */
+ .popuptext {
+   background-color: #555;
+   color: #fff;
+   position: absolute;
+   text-align: center;
+   border-radius: 6px;
+   padding: 3px 0;
+   z-index: 5;
+ }
+
+ #copypopup{
+   width: 150px;
+   display: none;
+   margin-top: 36px;
+  margin-left: -32px;
+ }
+
+  #setpopup{
+   display: none;
+   width: 70px;
+   margin-top: 36px;
+   margin-left: -20px;
+ }
+ 
+ /* Add animation (fade in the popup) */
+ @-webkit-keyframes fadeIn {
+   from {opacity: 0;} 
+   to {opacity: 1;}
+ }
+ @keyframes fadeIn {
+   from {opacity: 0;}
+   to {opacity:1 ;}
+ }
+
+ 
+/* chessboard */
+.board-cont{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 300px;
+}
+#myBoard {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.highlight-white {
+    box-shadow: inset 0 0 3px 3px yellow;
+}
+.highlight-black {
+    box-shadow: inset 0 0 3px 3px blue;
+}
+.highlight-hint {
+    box-shadow: inset 0 0 3px 3px red;
+}
+.no-underline {
+    text-decoration: none;
+}
+.no-outline:focus {
+    outline: none;
+    box-shadow: none;
+}
+.btn-header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* below the board alert */
+#boardalert{
+  display: none;
+  color: #FF8B8E;
+  background-color: #63070A;
+  flex-direction: row;
+  border-radius: 5px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 3px 5px 3px 5px;
+  margin: 5px 0 5px 0;
+  justify-content: space-between;
+}
+#alerticon{
+  margin-right: 10px;
+}
+#boardalert{
+  width: 70%;
+  margin-top: 1rem;
+}
+#copiedtext, #copiedicon{
+  display: none;
+}
+#close{
+  cursor: pointer;
+}
+
+/* suggestion, password and generate div */
+.post{
+  display: none;
+} 
+.suggest-crypt{
+  margin: 0.2em 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+}
+.inc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3px;
+  width: 300px;
+}
+ .action-btn{
+   color: white;
+   border-radius: 5px;
+   width: 70px;
+   height: 25px;
+   appearance: none;
+   border: 1px solid rgba(27, 31, 35, .15);
+   box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+   box-sizing: border-box;
+   cursor: pointer;
+   font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+   font-size: 12px;
+   font-weight: 450;
+   line-height: 20px;
+   position: relative;
+   text-align: center;
+   text-decoration: none;
+   user-select: none;
+   -webkit-user-select: none;
+   white-space: nowrap;
+   margin-bottom: 5px;
+ }
+ #undoIcon, #redoIcon{
+  margin-right: 5px;
+ }
+ #undoBtn{
+   background: red;
+ }
+ #redoBtn{
+   background: green;
+ }
+.act-sugg{
+  display: flex;
+  flex-direction: column;
+}
+#showHint{
+  margin-right: 5px;
+  color: #D7D7D7;
+}
+.suggest{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+/* downward buttons */
+.generate{
+  background-color: #2ea44f;
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  appearance: none;
+  border: 1px solid rgba(27, 31, 35, .15);
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+.generate:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+.generate:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+.generate:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+.generate:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+#lock{
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+
+
+/* hashed password text */
+.pass{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 40px;
+  padding: 0;
+  margin: 8px 0 0 0;
+  font-weight: bold;
+  color: #cdcdcd;
+}
+#showInput{
+  font-size: 17px;
+  margin: 10px 0 0 0;
+} 
+.copy-text {
+  padding: 5px;
+  border-radius:10px;
+  background: rgb(35 35 35);
+  border: 1px solid  rgb(35 35 35);
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+
+.copy-text input.password {
+  padding:10px;
+  width: 210px;
+  background: rgb(35 35 35);
+  font-size:18px;
+  color: #D7D7D7;
+  border: none;
+  outline:none;
+  padding-right:10px;
+}
+
+.copy-text button {
+  padding:10px;
+  background:#5784f5;
+  color:#fff;
+  font-size:15px;
+  border:none;
+  outline: none;
+  border-radius:10px;
+  cursor:pointer;
+}
+#copiedpassicon{
+  display: none;
+  font-size: 15px;
+}

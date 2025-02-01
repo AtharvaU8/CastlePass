@@ -66,7 +66,6 @@ If you find my work helpful or just want to support the journey, any donation he
 </div>
 
 <br>
-<br>
 
 ## Social
 

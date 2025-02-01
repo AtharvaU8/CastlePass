@@ -1,3 +1,4 @@
+[link-chrome]: https://chrome.google.com/webstore/detail/ 'Chrome Web Store'
 <p align="center">
   <a href="#" rel="noopener">
  <img src="" width="180"></a>
@@ -10,6 +11,10 @@
 CastlePass is a unique and innovative password generator chrome extension that turns your chess moves into secure passwords. Play against the bot, and generate strong, hashed passwords!
 
 ## Installation
+
+[<img src="https://user-images.githubusercontent.com/3750161/214147732-c75e96a4-48a4-4b64-b407-c2402e899a75.PNG" height="67" alt="Chrome" valign="middle">][link-chrome]
+
+<br>
 
 ## Usage
 
@@ -48,17 +53,14 @@ We aim to revolutionize password security by making it interactive and more enga
 
 ## Browser Compatibility
 
-For Now we're compatible with only chromium browser.
+For Now we're compatible with only chrome browser.
 
 - **Chrome Browser**
 
-<br>
 
 ## Donations
 
 If you find my work helpful or just want to support the journey, any donation helps and is truly appreciated. Thank you for being a part of this mission!
-
-<br>
 
 <div>
   
@@ -66,13 +68,11 @@ If you find my work helpful or just want to support the journey, any donation he
 
 </div>
 
-<br>
 
 ## Social
 
 - [Instagram](https://www.instagram.com/atharvaugale8)
 
-<br>
 
 ## Credits
 
@@ -82,7 +82,6 @@ If you find my work helpful or just want to support the journey, any donation he
 
 [Chess-bot](https://github.com/zeyu2001/chess-ai)
 
-<br>
 
 ## License
 

@@ -17,7 +17,7 @@ CastlePass is a unique and innovative password generator chrome extension that t
 
 <br>
 
-## Features
+### Features
 
 - Password Generation Using Chess Moves – Your game with the bot creates a unique, strong and hashed password.
 - Smart Chess Move Suggestions – Need help? Get chess move suggestions.

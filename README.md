@@ -3,7 +3,7 @@
  <img src="" width="180"></a>
 </p>
 
-<a href="https://hat.sh" style="color:#000"><h3 align="center">hat.sh</h3></a>
+<a href="" style="color:#000"><h3 align="center">CastlePass/h3></a>
 
 ---
 

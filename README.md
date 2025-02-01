@@ -14,7 +14,17 @@ CastlePass is a unique and innovative password generator chrome extension that t
 
 [<img src="https://user-images.githubusercontent.com/3750161/214147732-c75e96a4-48a4-4b64-b407-c2402e899a75.PNG" height="67" alt="Chrome" valign="middle">][link-chrome]
 
-<br>
+
+## Manual installation
+
+ℹ️ Don't forget to disable the extension installed from the Web Store while you're testing manually installed version.
+
+### Chrome
+1. Download the prebuilt chrome zip file from [here](build).
+2. Unzip the file.
+3. Open chrome://extensions in Chrome.
+4. Enable developer mode (top right corner).
+5. Click on Load unpacked and select the unzipped folder.
 
 ## Usage
 

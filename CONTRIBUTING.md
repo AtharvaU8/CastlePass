@@ -38,7 +38,7 @@ Before submitting a feature request:
 ### Pull Request Guidelines
 1. Fork the repo and create a new branch
    
-			git checkout -b feature-branch
+		git checkout -b feature-branch
 2. Make your changes and test locally.
 3. Commit with a meaningful message
 

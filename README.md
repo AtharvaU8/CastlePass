@@ -1,4 +1,4 @@
-[link-chrome]: https://chrome.google.com/webstore/detail/ 'Chrome Web Store'
+[link-chrome]: https://chrome.google.com/webstore/detail/castlepass/ 'Chrome Web Store'
 <p align="center">
   <a href="" rel="noopener">
  <img src="https://i.ibb.co/9H8bs1J2/chess-icon.png" alt="chess-icon" width="180" border="0" />
@@ -16,7 +16,7 @@ CastlePass is a unique and innovative password generator chrome extension that t
 
 ## Usage
 
-![how-to-use-gif]()
+<img src="https://imgur.com/veplviN.gif" width="1000">
 
 <br>
 
@@ -98,5 +98,5 @@ If you find my work helpful or just want to support the journey, any donation he
 
 ## License
 
-Copyright (C) 2025 Atharva. All Rights Reserved.
+Copyright (C) 2025 Atharva. All Rights Reserved. <br>
 Licensed under the Mozilla Public License 2.0.

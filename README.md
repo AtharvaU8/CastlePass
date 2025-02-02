@@ -98,5 +98,5 @@ If you find my work helpful or just want to support the journey, any donation he
 
 ## License
 
-Copyright (C) 2025 Atharva. All Rights Reserved.
+Copyright (C) 2025 Atharva. All Rights Reserved. <br>
 Licensed under the Mozilla Public License 2.0.

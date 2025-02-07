@@ -1,19 +1,15 @@
-[link-chrome]: https://chrome.google.com/webstore/detail/castlepass/ 'Chrome Web Store'
+[link-chrome]: https://chromewebstore.google.com/detail/imedbekciejflfnbpeliamodjaldecod/ 'Chrome Web Store'
 <p align="center">
-  <a href="" rel="noopener">
- <img src="https://i.ibb.co/9H8bs1J2/chess-icon.png" alt="chess-icon" width="180" border="0" />
+ <img src="https://i.ibb.co/9H8bs1J2/chess-icon.png" alt="chess-icon" width="180" border="0" /><h2 align="center">CastlePass</h2>
 </p>
 
-<a href="" style="color:#000"><h3 align="center">CastlePass</h3></a>
 
----
 
 CastlePass is a unique and innovative password generator chrome extension that turns your chess moves into secure passwords. Play against the bot, and generate strong, hashed passwords!
 
 ## Installation
 
 [<img src="https://user-images.githubusercontent.com/3750161/214147732-c75e96a4-48a4-4b64-b407-c2402e899a75.PNG" height="67" alt="Chrome" align="middle">][link-chrome]
-* Extension is **currently unavailable** on the Chrome Web Store. You can manually install it to start using it. Please follow the manual installation process.
 
 ## Usage
 
